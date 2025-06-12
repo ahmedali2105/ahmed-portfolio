@@ -5,7 +5,7 @@ from io import BytesIO
 
 st.set_page_config(page_title="Syed Ahmed Ali Portfolio", layout="wide")
 
-# CSS Styles with Larger Fonts
+# CSS Styles
 st.markdown("""
 <style>
 body {
@@ -16,18 +16,17 @@ body {
 h1 {
     color: #4a90e2;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 0;
 }
-h3, h4 {
-    font-size: 1.8rem;
+h3 {
     color: #333333;
     margin-top: 10px;
 }
 .subtitle {
     color: #777777;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -37,7 +36,6 @@ h3, h4 {
     padding: 25px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px rgba(74, 144, 226, 0.2);
-    font-size: 1.2rem;
 }
 a {
     color: #4a90e2;
@@ -49,16 +47,15 @@ a:hover {
 }
 .skills {
     margin-bottom: 40px;
-    font-size: 1.3rem;
 }
-ul li {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+.icon {
+    font-size: 22px;
+    margin-right: 8px;
+    color: #4a90e2;
 }
 .contact-links a {
     margin-right: 20px;
     font-weight: 600;
-    font-size: 1.3rem;
     color: #4a90e2;
     text-decoration: none;
 }
@@ -84,14 +81,14 @@ with col1:
 
 with col2:
     st.write("""
-    Hello! I'm **Syed Ahmed Ali**, an aspiring AI and Machine Learning engineer passionate about solving real-world problems using Python, Data Science, and Machine Learning techniques.
-
+    Hello! I'm Syed Ahmed Ali, an aspiring AI and Machine Learning engineer passionate about solving real-world problems using Python, Data Science, and Machine Learning techniques.
+    
     I build interactive dashboards and predictive models that provide actionable insights.
-
+    
     Explore my projects below or get in touch!
     """)
 
-# Skills
+# Skills with Icons (using emojis for simplicity)
 st.markdown('<h3>🛠 Skills & Tools</h3>', unsafe_allow_html=True)
 st.markdown("""
 <ul>
@@ -104,17 +101,17 @@ st.markdown("""
 
 st.markdown("---")
 
-# Projects
+# Projects Section
 st.markdown('<h3>📂 Projects</h3>', unsafe_allow_html=True)
 
 projects = [
     {
-        "name": "🚀 SpaceX Launch Analysis & Prediction Platform",
+        "name": "SpaceX Launch Analysis & Prediction Platform",
         "link": "https://github.com/ahmedali2105/SpaceX-Launch-Analysis-Prediction-Platform",
         "desc": "An advanced Python application that visualizes SpaceX launch data and predicts future launches using machine learning."
     },
     {
-        "name": "🏦 OOP Banking System",
+        "name": "OOP Banking System",
         "link": "https://github.com/ahmedali2105/OOP-Banking-System",
         "desc": "Console-based banking application simulating real-world banking operations using core OOP concepts."
     }
@@ -130,7 +127,7 @@ for proj in projects:
 
 st.markdown("---")
 
-# Contact
+# Contact Info with icons
 st.markdown('<h3>📬 Contact Me</h3>', unsafe_allow_html=True)
 st.markdown("""
 <div class="contact-links">
